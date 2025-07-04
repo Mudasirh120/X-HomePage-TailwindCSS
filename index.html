@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="./CSS/extra.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <title>Home / X</title>
+  </head>
+  <body class="bg-black text-white ">
+    <div class="flex container mx-auto h-screen">
+      <div class="first  w-[70%]  sticky top-0 h-screen overflow-hidden">
+        <div class="logo invert px-5 py-3">
+          <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8">
+            <g>
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"
+              ></path>
+            </g>
+          </svg>
+        </div>
+        <div class="sidebar h-[88%] flex flex-col justify-between">
+          <div class="flex flex-col text-xl px-3">
+            <div
+              class="flex justify-start items-center gap-3 font-bold px-2 py-3 w-fit hover:bg-gray-800 rounded-3xl cursor-pointer"
+            >
+              <span class="material-symbols-outlined scale-130"> home </span>
+              <span class="sidebar-text">Home</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
+            >
+              <span class="material-symbols-outlined scale-130"> search </span
+              ><span class="sidebar-text">Explore</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 px-2 py-3 w-fit hover:bg-gray-800 rounded-3xl cursor-pointer"
+            >
+              <span class="material-symbols-outlined scale-130">
+                notifications </span
+              ><span class="sidebar-text">Notifications</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
+            >
+              <span class="material-symbols-outlined scale-120"> mail </span
+              ><span class="sidebar-text">Messages</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
+            >
+              <span class="material-symbols-outlined scale-130"> bubble </span
+              ><span class="sidebar-text">Grok</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer extra extra-third"
+            >
+              <span class="material-symbols-outlined scale-130"> bookmark </span
+              ><span class="sidebar-text">Bookmark</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer extra extra-fourth"
+            >
+              <span class="material-symbols-outlined scale-130">
+                business_center </span
+              ><span class="sidebar-text">Jobs</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
+            >
+              <span class="material-symbols-outlined scale-120"> people </span
+              ><span class="sidebar-text">Community</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer extra extra-first"
+            >
+              <span class="material-symbols-outlined scale-120">
+                attach_money </span
+              ><span class="sidebar-text">Premium</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer extra extra-second"
+            >
+              <span class="material-symbols-outlined scale-120"> bolt </span
+              ><span class="sidebar-text">Verified Orgs</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
+            >
+              <span class="material-symbols-outlined scale-120"> person </span
+              ><span class="sidebar-text">Profile</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
+            >
+              <span class="material-symbols-outlined border-[2px] rounded-2xl">
+                more_horiz </span
+              ><span class="sidebar-text">More</span>
+            </div>
+            <button
+              class="bg-white text-black rounded-full mt-4 mb-8 py-3 hover:bg-gray-200 cursor-pointer font-bold sidebar-btn flex items-center justify-center"
+            >
+              <span class="sidebar-text">Post</span>
+              <span class="material-symbols-outlined sidebar-btn-icon">
+                add
+              </span>
+            </button>
+          </div>
+          <div class="profile-info flex mt-auto px-4">
+            <div class="img-box">
+              <img
+                class="w-12 rounded-full"
+                src="assets/user.png"
+                alt="user pfp"
+              />
+            </div>
+            <div
+              class="text-info flex flex-col justify-center items-center w-full sidebar-text"
+            >
+              <h4 class="name font-bold text-sm">Mudasir Hussain</h4>
+              <span class="username text-slate-500 text-sm">@M10SIR</span>
+            </div>
+            <div class="more-info sidebar-text">
+              <span class="material-symbols-outlined"> more_horiz </span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="second w-[155%] border-[1px] border-x-gray-800 border-y-black h-screen"
+      >
+        <div
+          class="type-post w-full flex justify-around border-slate-800 border-b-1 pt-3"
+        >
+          <h4 class="font-bold text-m border-blue-700 border-b-4 pb-3">
+            For You
+          </h4>
+          <h4 class="text-m text-gray-500">Following</h4>
+        </div>
+        <div class="p-3 w-full border-slate-800 border-b-1">
+          <div class="content flex items-start gap-3 w-full">
+            <div class="img-box">
+              <img
+                src="./assets/user.png"
+                alt="user pfp"
+                class="w-10 rounded-full object-cover"
+              />
+            </div>
+            <div
+              class="tweet-box w-full pb-4 border-transparent border-b-2 transition-all duration-200"
+            >
+              <textarea
+                placeholder="What's happening?"
+                class="quick-tweet w-full text-xl px-2 pb-1 resize-none border-none overflow-hidden outline-none placeholder-gray-500 leading-tight"
+                rows="1"
+              ></textarea>
+              <div class="flex items-center gap-1 mt-3 not-show visibility">
+                <span
+                  class="material-symbols-outlined text-blue-600"
+                  style="font-size: 18px"
+                >
+                  globe_uk
+                </span>
+                <span class="text-blue-600 text-sm font-bold"
+                  >Everyone can reply</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="icons-tray flex justify-between items-center mt-3">
+            <div class="icons flex gap-3 px-14">
+              <span class="material-symbols-outlined text-blue-600">
+                add_photo_alternate
+              </span>
+              <span class="material-symbols-outlined text-blue-600"> gif </span>
+              <span class="material-symbols-outlined text-blue-600">
+                bubble
+              </span>
+              <span class="material-symbols-outlined text-blue-600">
+                ballot
+              </span>
+              <span class="material-symbols-outlined text-blue-600">
+                mood
+              </span>
+              <span class="material-symbols-outlined text-blue-600">
+                calendar_clock
+              </span>
+              <span class="material-symbols-outlined text-blue-600">
+                location_on
+              </span>
+            </div>
+            <button
+              class="tweet-button font-bold bg-gray-600 text-black px-4 py-1.5 rounded-full"
+            >
+              Post
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="third w-full flex flex-col items-center  h-screen">
+        <div
+          class="search-box rounded-full flex items-center gap-2 py-2 px-2 w-[85%] mt-2 border-slate-800 border-1"
+        >
+          <span
+            class="material-symbols-outlined text-gray-400"
+            style="font-size: 18px"
+          >
+            search
+          </span>
+          <input
+            type="text"
+            placeholder="Search"
+            class="border-none outline-0 active:outline-0 search-input"
+          />
+        </div>
+        <div
+          class="upgrade-box rounded-2xl gap-2 py-3 px-4 w-[85%] mt-2 border-slate-800 border-1"
+        >
+          <h3 class="font-extrabold text-xl mb-3">Subscribe to Premium</h3>
+          <p class="text-m text-slate-200 leading-5 mb-3">
+            Subscribe to unlock new features and if eligible, receive a share of
+            revenue.
+          </p>
+          <button
+            class="bg-blue-500 rounded-full px-5 py-1.5 font-bold text-m hover:bg-blue-600"
+          >
+            Subscribe
+          </button>
+        </div>
+        <div
+          class="trend-box rounded-2xl flex flex-col gap-2 py-3 px-4 w-[85%] mt-2 border-slate-800 border-1"
+        >
+          <h3 class="font-extrabold text-xl mb-5">What’s happening</h3>
+          <div class="top-trend flex mb-3">
+            <img
+              src="./assets/trend-live.jpg"
+              alt="Live trend"
+              class="h-20 w-20 rounded-xl object-cover"
+            />
+            <div class="title-trend px-2 py-2">
+              <h4 class="name font-bold text-m">NFL Top 100 Countdown</h4>
+              <span class="username text-slate-500 text-sm">LIVE</span>
+            </div>
+          </div>
+          <div class="trend flex">
+            <div class="text-info w-full">
+              <span class="username text-slate-500 text-[14px]"
+                >Sports • Trending</span
+              >
+              <h4 class="name font-bold text-m">England</h4>
+              <span class="username text-slate-500 text-[14px]"
+                >85.2K posts</span
+              >
+            </div>
+            <div class="more-info sidebar-text">
+              <span class="material-symbols-outlined"> more_horiz </span>
+            </div>
+          </div>
+          <div class="trend flex">
+            <div class="text-info w-full">
+              <span class="username text-slate-500 text-[14px]">Trending</span>
+              <h4 class="name font-bold text-m">#OperationSindoor</h4>
+              <span class="username text-slate-500 text-[14px]"
+                >5.2K posts</span
+              >
+            </div>
+            <div class="more-info sidebar-text">
+              <span class="material-symbols-outlined"> more_horiz </span>
+            </div>
+          </div>
+          <div class="trend flex">
+            <div class="text-info w-full">
+              <span class="username text-slate-500 text-[14px]"
+                >UEFA Champions League • Trending</span
+              >
+              <h4 class="name font-bold text-m">#DigoJota</h4>
+              <span class="username text-slate-500 text-[14px]"
+                >25.4K posts</span
+              >
+            </div>
+            <div class="more-info ">
+              <span class="material-symbols-outlined"> more_horiz </span>
+            </div>
+          </div>
+          <div class="trend flex">
+            <div class="text-info w-full">
+              <span class="username text-slate-500 text-[14px]"
+                >Trending in Pakistan</span
+              >
+              <h4 class="name font-bold text-m">#BuildingCollapse</h4>
+            </div>
+            <div class="more-info sidebar-text">
+              <span class="material-symbols-outlined"> more_horiz </span>
+            </div>
+          </div>
+          <h4 class="text-blue-500 text-m mb-3">Show more</h4>
+        </div>
+        <div
+          class="follow-box rounded-2xl flex flex-col gap-3 py-3 px-4 w-[85%] mt-2 border-slate-800 border-1"
+        >
+          <h3 class="font-extrabold text-xl mb-5">Who to follow</h3>
+          <div class="profile-info flex items-center mt-auto px-2">
+            <div class="text-info flex gap-2 w-full">
+              <img
+                class="w-10 h-10 rounded-full"
+                src="assets/user.png"
+                alt="user pfp"
+              />
+              <div>
+                <h4 class="name font-bold text-sm flex items-center gap-2">
+                  Mudasir Hussain
+                  <span
+                    class="material-symbols-outlined text-blue-500"
+                    style="font-size: 20px"
+                  >
+                    check_circle
+                  </span>
+                </h4>
+                <span class="username text-slate-500 text-sm">@M10SIR</span>
+              </div>
+            </div>
+            <div class="more-info">
+              <button
+                class="text-slate-700 font-bold bg-white rounded-full px-4 py-1 hover:bg-gray-200"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+          <div class="profile-info flex items-center mt-auto px-2">
+            <div class="text-info flex gap-2 w-full">
+              <img
+                class="w-10 h-10 rounded-full"
+                src="assets/user.png"
+                alt="user pfp"
+              />
+              <div>
+                <h4 class="name font-bold text-sm">Mudasir Hussain</h4>
+                <span class="username text-slate-500 text-sm">@M10SIR</span>
+              </div>
+            </div>
+            <div class="more-info">
+              <button
+                class="text-slate-700 font-bold bg-white rounded-full px-4 py-1 hover:bg-gray-200"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+          <div class="profile-info flex items-center mt-auto px-2">
+            <div class="text-info flex gap-2 w-full">
+              <img
+                class="w-10 h-10 rounded-full"
+                src="assets/user.png"
+                alt="user pfp"
+              />
+              <div>
+                <h4 class="name font-bold text-sm">Mudasir Hussain</h4>
+                <span class="username text-slate-500 text-sm">@M10SIR</span>
+              </div>
+            </div>
+            <div class="more-info">
+              <button
+                class="text-slate-700 font-bold bg-white rounded-full px-4 py-1 hover:bg-gray-200"
+              >
+                Follow
+              </button>
+            </div>
+          </div>
+            <h4 class="text-blue-500 text-m mb-3">Show more</h4>
+          </div>
+          <h4 class="mt-4 font-bold text-slate-600">~ Mudasir Hussain</h4>
+          <p class="text-blue-500 opacity-60 font-bold">Tailwind</p>
+        </div>
+      </div>
+    </div>
+    <script src="JS/sidebar.js"></script>
+  </body>
+</html>
