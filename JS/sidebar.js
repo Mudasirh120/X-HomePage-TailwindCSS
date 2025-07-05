@@ -8,6 +8,8 @@ const aside = document.querySelector(".third");
 const sideBar = document.querySelector(".first");
 const sideBarMenu = document.querySelectorAll(".sidebar-text");
 const sideBarBtnIcon = document.querySelector(".sidebar-btn-icon");
+// New Post
+const createPost = document.querySelector(".new-post");
 function reloadBar() {
   const height = window.innerHeight;
   const width = window.innerWidth;
@@ -40,6 +42,11 @@ function reloadBar() {
     aside.classList.add("not-show");
   } else {
     aside.classList.remove("not-show");
+  }
+  if (width <= 500) {
+    createPost.classList.add("not-show");
+  } else {
+    createPost.classList.remove("not-show");
   }
 }
 window.addEventListener("load", reloadBar);
