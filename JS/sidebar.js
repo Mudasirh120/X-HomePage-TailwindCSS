@@ -1,3 +1,4 @@
+const App = document.querySelector("body");
 // Sidebar
 const extras = document.querySelectorAll(".extra");
 const extra1 = document.querySelector(".extra-first");
@@ -10,6 +11,10 @@ const sideBarMenu = document.querySelectorAll(".sidebar-text");
 const sideBarBtnIcon = document.querySelector(".sidebar-btn-icon");
 // New Post
 const createPost = document.querySelector(".new-post");
+// Mobile Menu
+const mobileMenu = document.querySelector(".mobile-only");
+const hamMenuOpener = document.querySelector(".hamburger-open");
+const NotForMobile = document.querySelectorAll(".not-for-mobile");
 function reloadBar() {
   const height = window.innerHeight;
   const width = window.innerWidth;
@@ -31,11 +36,7 @@ function reloadBar() {
     sideBarMenu.forEach((el) => el.classList.add("not-show"));
     sideBarBtnIcon.classList.remove("!hidden");
   } else {
-    sideBarMenu.forEach((el) => {
-      if (el.classList.contains("not-show")) {
-        el.classList.remove("not-show");
-      }
-    });
+    sideBarMenu.forEach((el) => el.classList.remove("not-show"));
     sideBarBtnIcon.classList.add("!hidden");
   }
   if (width <= 1000) {
@@ -45,8 +46,28 @@ function reloadBar() {
   }
   if (width <= 500) {
     createPost.classList.add("not-show");
+    NotForMobile.forEach((el) => el.classList.add("not-show"));
+    mobileMenu.classList.remove("not-show");
+    sideBar.classList.add("not-show");
+    hamMenuOpener.addEventListener("click", (e) => {
+      console.log("Tried");
+      sideBar.classList.remove("not-show");
+      sideBar.style.width = "55%";
+      sideBar.style.position = "absolute";
+      sideBar.style.zIndex = "10";
+      sideBarMenu.forEach((el) => el.classList.remove("not-show"));
+      App.style.backgroundColor = "oklch(37.2% 0.044 257.287)";
+      e.stopPropagation();
+      document.querySelector(".second").addEventListener("click", () => {
+        App.style.backgroundColor = "#000";
+        sideBar.classList.add("not-show");
+      });
+    });
   } else {
     createPost.classList.remove("not-show");
+    NotForMobile.forEach((el) => el.classList.remove("not-show"));
+    mobileMenu.classList.add("not-show");
+    App.style.backgroundColor = "#000";
   }
 }
 window.addEventListener("load", reloadBar);
