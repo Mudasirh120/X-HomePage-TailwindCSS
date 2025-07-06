@@ -12,9 +12,11 @@ const sideBarBtnIcon = document.querySelector(".sidebar-btn-icon");
 // New Post
 const createPost = document.querySelector(".new-post");
 // Mobile Menu
-const mobileMenu = document.querySelector(".mobile-only");
+const mobileMenu = document.querySelectorAll(".mobile-only");
 const hamMenuOpener = document.querySelector(".hamburger-open");
 const NotForMobile = document.querySelectorAll(".not-for-mobile");
+const floatingIconBig = document.querySelector(".floating-icon-big");
+const floatingIconSmall = document.querySelector(".floating-icon-sml");
 function reloadBar() {
   const height = window.innerHeight;
   const width = window.innerWidth;
@@ -47,16 +49,18 @@ function reloadBar() {
   if (width <= 500) {
     createPost.classList.add("not-show");
     NotForMobile.forEach((el) => el.classList.add("not-show"));
-    mobileMenu.classList.remove("not-show");
+    mobileMenu.forEach((el) => el.classList.remove("not-show"));
+    floatingIconBig.classList.add("not-show");
+    floatingIconSmall.classList.remove("not-show");
     sideBar.classList.add("not-show");
     hamMenuOpener.addEventListener("click", (e) => {
-      console.log("Tried");
       sideBar.classList.remove("not-show");
       sideBar.style.width = "55%";
       sideBar.style.position = "absolute";
       sideBar.style.zIndex = "10";
       sideBarMenu.forEach((el) => el.classList.remove("not-show"));
-      App.style.backgroundColor = "oklch(37.2% 0.044 257.287)";
+      App.style.backgroundColor = "oklch(27.9% 0.041 260.031)";
+      App.style.opacity = "80%";
       e.stopPropagation();
       document.querySelector(".second").addEventListener("click", () => {
         App.style.backgroundColor = "#000";
@@ -66,8 +70,10 @@ function reloadBar() {
   } else {
     createPost.classList.remove("not-show");
     NotForMobile.forEach((el) => el.classList.remove("not-show"));
-    mobileMenu.classList.add("not-show");
+    mobileMenu.forEach((el) => el.classList.add("not-show"));
     App.style.backgroundColor = "#000";
+    floatingIconBig.classList.remove("not-show");
+    floatingIconSmall.classList.add("not-show");
   }
 }
 window.addEventListener("load", reloadBar);
