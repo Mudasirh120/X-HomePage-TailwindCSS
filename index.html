@@ -18,7 +18,7 @@
     <div class="floating-icon-sml flex justify-center items-center fixed right-5 bottom-[7%] bg-blue-500 px-2 py-2 rounded-full z-10">
       <span class="material-symbols-outlined" style="font-size: 36px;"> add </span>
       </div>
-    <div class="mobile-only flex justify-around">
+    <div class="mobile-only flex justify-between py-2 px-5">
       <img src="./assets/user.png" alt="" class="hamburger-open w-10 rounded-full">
       <div class="invert ">
           <svg viewBox="0 0 24 24" aria-hidden="true" class="w-8">
@@ -29,7 +29,7 @@
             </g>
           </svg>
         </div>
-        <button>Get Premium</button>
+        <button class="rounded-full border-2 border-white px-2 py-1">Get Premium</button>
     </div>
     <div class="mobile-only flex items-center justify-around py-2 bg-black  border-t-slate-800 border-t-2 fixed bottom-0 w-screen">
       <span class="material-symbols-outlined " style="font-size: 28px;"> Home </span>
@@ -51,34 +51,51 @@
           </svg>
         </div>
         <div class="sidebar bg-black h-[88%] flex flex-col justify-between">
-          <div class="flex flex-col text-xl px-3">
+          <div class="flex flex-col text-xl px-3 py-2">
+            <div class="mobile-only mb-4">
+              <div class="img-box flex justify-between items-center px-2">
+                <img
+                  class="w-10 rounded-full"
+                  src="assets/user.png"
+                  alt="user pfp"
+                />
+                <span class="material-symbols-outlined rounded-full border-2 border-white flex justify-center items-center"> add </span>
+              </div>
+              <div
+                class="text-info flex flex-col justify-center w-full"
+              >
+                <h4 class="font-bold text-[18px] mt-2">Mudasir Hussain</h4>
+                <span class=" text-slate-500 text-sm">@M10SIR</span>
+                <span class="text-sm flex gap-1">27<span class=" text-slate-500 mr-3">Following</span>0<span class=" text-slate-500">Follower</span></span>
+              </div>
+            </div>
             <div
-              class="flex justify-start items-center gap-3 font-bold px-2 py-3 w-fit hover:bg-gray-800 rounded-3xl cursor-pointer"
+              class="not-for-mobile flex justify-start items-center gap-3 font-bold px-2 py-3 w-fit hover:bg-gray-800 rounded-3xl cursor-pointer"
             >
               <span class="material-symbols-outlined scale-130"> home </span>
               <span class="sidebar-text">Home</span>
             </div>
             <div
-              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
+              class="not-for-mobile flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
             >
               <span class="material-symbols-outlined scale-130"> search </span
               ><span class="sidebar-text">Explore</span>
             </div>
             <div
-              class="flex justify-start items-center gap-3 px-2 py-3 w-fit hover:bg-gray-800 rounded-3xl cursor-pointer"
+              class="not-for-mobile flex justify-start items-center gap-3 px-2 py-3 w-fit hover:bg-gray-800 rounded-3xl cursor-pointer"
             >
               <span class="material-symbols-outlined scale-130">
                 notifications </span
               ><span class="sidebar-text">Notifications</span>
             </div>
             <div
-              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
+              class="not-for-mobile flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
             >
               <span class="material-symbols-outlined scale-120"> mail </span
               ><span class="sidebar-text">Messages</span>
             </div>
             <div
-              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
+              class="not-for-mobile flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
             >
               <span class="material-symbols-outlined scale-130"> bubble </span
               ><span class="sidebar-text">Grok</span>
@@ -88,6 +105,12 @@
             >
               <span class="material-symbols-outlined scale-130"> bookmark </span
               ><span class="sidebar-text">Bookmark</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer mobile-only"
+            >
+              <span class="material-symbols-outlined scale-130"> List_Alt </span
+              ><span class="sidebar-text">List</span>
             </div>
             <div
               class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer extra extra-fourth"
@@ -116,10 +139,34 @@
               ><span class="sidebar-text">Verified Orgs</span>
             </div>
             <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer mobile-only"
+            >
+              <span class="material-symbols-outlined scale-120"> payments </span
+              ><span class="sidebar-text">Monetization</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer mobile-only"
+            >
+              <span class="material-symbols-outlined scale-120">ads_click  </span
+              ><span class="sidebar-text">Ads</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer mobile-only"
+            >
+              <span class="material-symbols-outlined scale-120"> settings </span
+              ><span class="sidebar-text">Settings</span>
+            </div>
+            <div
               class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
             >
               <span class="material-symbols-outlined scale-120"> person </span
               ><span class="sidebar-text">Profile</span>
+            </div>
+            <div
+              class="flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer mobile-only"
+            >
+              <span class="material-symbols-outlined scale-120"> account_circle_off </span
+              ><span class="sidebar-text">Log Out</span>
             </div>
             <div
               class="not-for-mobile flex justify-start items-center gap-3 w-fit px-2 py-3 hover:bg-gray-800 rounded-3xl cursor-pointer"
@@ -835,5 +882,5 @@
         </div>
     </div>
     <script src="JS/sidebar.js"></script>
-  </body>
+ </body>
 </html>
